@@ -1,0 +1,23 @@
+@import url("http://fonts.googleapis.com/css?family=Lato|Raleway:400,700,300");
+
+// Colors!
+$purple: #6357BA;
+$eshell: #EFEFEF;
+$blue: #3454D1;
+$black: #070707;
+$teal: #34D1BF;  // Actually it's more of a turquoise
+
+// Body-stack not nearly as gruesome as it sounds
+$body-stack: 'Lato', Calibri, Helvetica, sans-serif;
+$h-stack: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, Helvetica, sans-serif;
+
+h1, h2, h3, h4, h5 {
+	font-family: $h-stack;
+	font-weight: 700;
+	color: $black;
+}
+
+body {
+	font-family: $body-stack;
+	color: $black;
+}
