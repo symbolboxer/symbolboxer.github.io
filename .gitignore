@@ -1,2 +1,5 @@
+.jekyll-metadata
 .sass-cache
 *.css.map
+
+_site
