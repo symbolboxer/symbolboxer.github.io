@@ -1,5 +1,29 @@
-@import 'common';
+---
+---
+@import '_common.scss';
 
 .header {
 	background-color: $purple;
+}
+
+.footer {
+	text-align: center;
+	color: $purple;
+	font-family: $h-stack;
+	font-weight: 300;
+
+	// Lining figures
+	font-variant-numeric: lining-nums;
+	-moz-font-feature-settings: "lnum";
+	-webkit-font-feature-settings: "lnum";
+	font-feature-settings: "lnum";
+
+	a {
+		text-decoration: none;
+		color: inherit;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }

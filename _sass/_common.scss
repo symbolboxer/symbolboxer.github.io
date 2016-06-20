@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Lato|Raleway:400,700,300");
+@import 'http://fonts.googleapis.com/css?family=Lato|Raleway:300,400,700&subset=all';
 
 // Colors!
 $purple: #6357BA;
@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
+	background-color: $eshell;
 	font-family: $body-stack;
 	color: $black;
 }
