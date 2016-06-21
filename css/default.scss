@@ -18,6 +18,7 @@ a {
 	padding: 1rem;
 	background-color: $purple;
 	color: $eshell;
+	font-family: $h-stack;
 }
 
 .navbar {
@@ -25,7 +26,6 @@ a {
 	display: flex;
 	align-items: center;
 	font-size: 1.5rem;
-	font-family: $h-stack;
 
 	a {
 		margin-left: 2rem;
@@ -46,13 +46,27 @@ a {
 	font-weight: 700;
 }
 
+.title {
+	margin-top: 1rem;
+	font-size: 5rem;
+	font-weight: 700;
+	color: $eshell;
+}
+
+.subtitle {
+	font-size: 3rem;
+	color: $subtle;
+	font-style: italic;
+	line-height: 85%;
+}
+
 .content {
 	margin-left: 1rem;
 	margin-right: 1rem;
 }
 
 .aside {
-	color: #979797;
+	color: $subtle;
 	font-style: italic;
 }
 
