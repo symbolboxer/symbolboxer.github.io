@@ -1,4 +1,4 @@
-@import 'http://fonts.googleapis.com/css?family=Lato|Raleway:300,400,700&subset=all';
+@import 'http://fonts.googleapis.com/css?family=Lato:400,500,700,800|Raleway:100,200,400,500,700,800&subset=all';
 
 // Colors!
 $purple: #6357BA;
@@ -10,6 +10,17 @@ $teal: #34D1BF;  // Actually it's more of a turquoise
 // Body-stack not nearly as gruesome as it sounds
 $body-stack: 'Lato', Calibri, Helvetica, sans-serif;
 $h-stack: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, Helvetica, sans-serif;
+
+@mixin lnums {
+	// Lining figures
+	font-variant-numeric: lining-nums;
+	-moz-font-feature-settings:"lnum" 1;
+	-moz-font-feature-settings:"lnum=1";
+	-ms-font-feature-settings:"lnum" 1;
+	-o-font-feature-settings:"lnum" 1;
+	-webkit-font-feature-settings:"lnum" 1;
+	font-feature-settings:"lnum" 1;
+}
 
 h1, h2, h3, h4, h5 {
 	font-family: $h-stack;

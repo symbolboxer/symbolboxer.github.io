@@ -2,28 +2,54 @@
 ---
 @import '_common.scss';
 
+a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: 500;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
 .header {
+	@include lnums;
+
+	padding: 1rem;
 	background-color: $purple;
+	color: $eshell;
+}
+
+.navbar {
+	height: 2rem;
+	line-height: 2rem;
+	vertical-align: middle;
+	font-size: 1.5rem;
+	font-family: $h-stack;
+}
+
+.logo {
+	height: 100%;
+}
+
+.initials {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.content {
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
 .footer {
+	@include lnums;
 	text-align: center;
 	color: $purple;
 	font-family: $h-stack;
-	font-weight: 300;
-
-	// Lining figures
-	font-variant-numeric: lining-nums;
-	-moz-font-feature-settings: "lnum";
-	-webkit-font-feature-settings: "lnum";
-	font-feature-settings: "lnum";
+	font-weight: 100;
 
 	a {
-		text-decoration: none;
-		color: inherit;
-
-		&:hover {
-			text-decoration: underline;
-		}
+		font-weight: 200;
 	}
 }
