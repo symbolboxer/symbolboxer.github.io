@@ -51,6 +51,11 @@ a {
 	margin-right: 1rem;
 }
 
+.aside {
+	color: #979797;
+	font-style: italic;
+}
+
 .footer {
 	@include lnums;
 	text-align: center;
