@@ -4,8 +4,8 @@
 
 a {
 	text-decoration: none;
-	color: inherit;
-	font-weight: 500;
+	color: $blue;
+	font-weight: 700;
 
 	&:hover {
 		text-decoration: underline;
@@ -29,6 +29,7 @@ a {
 
 	a {
 		margin-left: 2rem;
+		color: $eshell;
 
 		&:hover {
 			text-decoration: none;
@@ -58,6 +59,7 @@ a {
 	color: $subtle;
 	font-style: italic;
 	line-height: 85%;
+	margin-left: .25rem;
 }
 
 .content {
@@ -78,6 +80,7 @@ a {
 	font-weight: 100;
 
 	a {
-		font-weight: 200;
+		color: $purple;
+		font-weight: 300;
 	}
 }
