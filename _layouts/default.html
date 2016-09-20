@@ -23,7 +23,7 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
 	<link rel="stylesheet" href="css/default.css">
-	
+
 	{% if jekyll.environment == 'production' %}
 		{% include analytics.html %}
 	{% endif %}
@@ -31,11 +31,6 @@
 
 <body>
 	<div class="header">
-		<div class="navbar">
-			<img src="/images/capricorn.svg" class="logo">
-			<a href="/" class="initials">CF</a>
-			<a href="/faq">FAQ</a>
-		</div>
 		{% if page.title %}
 			<div class="title">{{ page.title }}</div>
 			{% if page.subtitle %}
@@ -49,6 +44,6 @@
 	</div>
 
 	<div class="footer">
-		© {{ site.time | date: '%Y' }} Chris Fincher ◆ <a href="https://github.com/chrimifi/chrimifi.github.io">Fork This Site</a> ◆ <a href="/legal">Legal</a>
+		© {{ site.time | date: '%Y' }} Chris Fincher | <a href="https://github.com/chrimifi/chrimifi.github.io">Fork This Site</a> | <a href="/legal">Legal</a>
 	</div>
 </body>
