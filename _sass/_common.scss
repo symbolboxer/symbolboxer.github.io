@@ -1,14 +1,16 @@
 @import 'http://fonts.googleapis.com/css?family=Lato:400|Raleway:100,300,400i&subset=all';
+@import url('https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i&display=swap');
 
 // Colors!
-$purple: #6357BA;
+$indigo: rgb(56, 47, 128);
 $eshell: #EFEFEF;
 $subtle: #979797;
 $black: #120F28;
 
 // Body-stack not nearly as gruesome as it sounds
 $body-stack: 'Lato', Calibri, Helvetica, sans-serif;
-$h-stack: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, Helvetica, sans-serif;
+$h-stack: 'DM Serif Display', 'Sorts Mill Goudy', Garamond, serif;
 
 @mixin lnums {
 	// Lining figures
@@ -21,16 +23,23 @@ $h-stack: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, Helvetica, sans-serif
 	font-feature-settings:"lnum" 1;
 }
 
-h1, h2, h3, h4, h5 {
-	font-family: $h-stack;
-	color: $black;
-	text-align: center;
-	font-weight: 100;
-}
-
-body {
+html {
+	line-height: 1.61803398875;
 	background-color: $eshell;
 	font-family: $body-stack;
 	font-weight: 100;
 	color: $black;
 }
+
+a {
+	text-decoration: underline $subtle;
+	color: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: $h-stack;
+	color: $black;
+	font-weight: 100;
+}
+
+.aside { color: $subtle; }

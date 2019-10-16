@@ -1,0 +1,71 @@
+---
+---
+@import '_common';
+@import '_breakpoints';
+
+html {
+    font-size: 10px;
+    font-family: $h-stack;
+    
+    @include breakpoint-small-up {
+        font-size: 12px;
+    }
+  
+    @include breakpoint-medium-up {
+        font-size: 17px;
+    }
+  
+    @include breakpoint-large-up {
+        font-size: 22px;
+    }
+
+    @include breakpoint-xlarge-up {
+        font-size: 24px;
+    }
+  }
+
+.landing-synopsis {
+    font-family: $h-stack;
+    margin: 0;
+    padding: 0;
+    font-size: 2.9rem;
+    line-height: 1;
+
+    &:last-child { padding-bottom: .6rem; }
+}
+
+.like-for-serious {
+    // font-style: italic;
+    font-weight: bold;
+}
+
+body { margin: 0; }
+
+#firstline-block, #below-firstline {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+}
+
+#firstline-block {
+    background: $indigo;
+    color: $eshell;
+    margin: 0;
+    min-height: 50vh;
+    display: flex;
+    align-items: flex-end;
+
+    .landing-synopsis {
+        font-size: 4rem;
+        line-height: .9;
+
+        &:last-child { padding-bottom: .8rem; }
+    }
+}
+
+#below-firstline {
+    padding-left: 1.2rem;
+    padding-top: .8rem;
+    .landing-synopsis {
+        color: $indigo;
+    }
+}

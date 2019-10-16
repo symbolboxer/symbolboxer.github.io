@@ -1,0 +1,13 @@
+
+The source code of this website is freely available on GitHub at
+https://github.com/symbolboxer/symbolboxer.github.io and is licensed under the MIT License.
+
+
+The bird used for this site's favicons is based on the bird emoji in
+Twemoji 12.1.3. (https://github.com/twitter/twemoji)
+Images from that project are licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+Thanks, Twitter!
+
+Media queries were adapted from Dinesh Pandiyan's Responsive Layout Design demo
+(https://github.com/flexdinesh/responsive-layout/), which is licensed under the MIT license, so I
+don't even have to acknowledge ever seeing his work. But I will! Thanks, Dinesh!
